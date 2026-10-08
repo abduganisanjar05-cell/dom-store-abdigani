@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1d2a39;
+}
+
+.app {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(17, 33, 66, 0.08);
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  color: #152744;
+}
+
+.product-form-section {
+  margin-bottom: 30px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e3e8f0;
+}
+
+#product-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #c7d0dc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: 2px solid rgba(36, 110, 255, 0.2);
+  border-color: #246eff;
+}
+
+.error-message {
+  min-height: 20px;
+  margin: 8px 0 0;
+  color: #d93025;
+  font-size: 0.85rem;
+}
+
+.submit-btn,
+.qty-btn,
+.delete-btn {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.submit-btn {
+  align-self: end;
+  padding: 12px 16px;
+  background: #246eff;
+  color: #fff;
+  font-weight: 700;
+}
+
+.submit-btn:hover,
+.qty-btn:hover,
+.delete-btn:hover {
+  opacity: 0.9;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.product-table th,
+.product-table td {
+  padding: 14px 12px;
+  text-align: left;
+  border-bottom: 1px solid #edf1f6;
+}
+
+.product-table th {
+  background: #f2f6ff;
+  color: #1c2d42;
+}
+
+.quantity-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qty-btn {
+  width: 30px;
+  height: 30px;
+  background: #dfeaff;
+  color: #133d8a;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.delete-btn {
+  padding: 8px 12px;
+  background: #ffebeb;
+  color: #b42318;
+  font-weight: 600;
+}
+
+.empty-row {
+  text-align: center;
+  color: #5d6d7e;
+}
+
+.total-box {
+  margin-top: 18px;
+  font-size: 1.15rem;
+  text-align: right;
+}
+
+.total-label {
+  font-weight: 700;
+  margin-right: 8px;
+}

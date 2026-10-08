@@ -1,0 +1,12 @@
+{
+  "name": "dom-store-abdigani",
+  "version": "1.0.0",
+  "description": "Simple scooter rental store application",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vitest": "^5.0.3"
+  }
+}
